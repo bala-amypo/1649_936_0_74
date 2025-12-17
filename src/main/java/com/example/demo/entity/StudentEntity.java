@@ -48,7 +48,7 @@ public class StudentEntity
     public Integer getId(){
         return id;
     }
-    public Date getcreate(){
+    public Date getCreated(){
         return created;
     }
 }
