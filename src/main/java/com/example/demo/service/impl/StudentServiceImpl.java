@@ -1,6 +1,8 @@
 package com.example.demo.service.impl;
 import org.springframework.stereotype.Service;
 @service
-public class StudentServiceImpl implements {
-
+public class StudentServiceImpl implements StudentService{
+     StudentEntity postData(StudentEntity stu){
+          
+     }
 }
