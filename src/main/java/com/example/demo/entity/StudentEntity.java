@@ -21,16 +21,16 @@ public class StudentEntity
         this.password=password;
         this.created=created;
     }
-    public String setName(String name){
+    public void setName(String name){
         this.name=name;
     }
-    public String setEmail(String email){
+    public void setEmail(String email){
         this.email=email;
     }
-    public String setPassword(String password){
+    public void setPassword(String password){
         this.password=password;
     }
-    public Integer setId(Integer id){
+    public void setId(Integer id){
         this.id=id;
     }
     public void setCreated(Date created){
