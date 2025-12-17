@@ -3,23 +3,23 @@ package com.example.demo.entity;
 @Entity
 public class StudentEntity
 {
-    private String username,email,password;
     private Integer id;
-    private Date create;
+    private String username,email,password;
+    private Date created;
     public String setName(String name){
         this.name=name;
     }
-    public String setName(String email){
+    public String setEmail(String email){
         this.email=email;
     }
-    public String setName(String password){
+    public String setPassword(String password){
         this.password=password;
     }
-    public Integer setName(Integer id){
+    public Integer setId(Integer id){
         this.id=id;
     }
-    public Date setName(Date create){
-        this.create=create;
+    public void setCreated(Date created){
+        this.created=created;
     }
     public String getName(){
         return name;
