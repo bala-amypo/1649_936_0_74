@@ -4,8 +4,16 @@ package com.example.demo.entity;
 public class StudentEntity
 {
     private Integer id;
-    private String username,email,password;
+    private String name,email,password;
     private Date created;
+    public StudentEntity(){
+    }
+    public StudentEntity(Integer id,String name,String email,String password,Date created){
+        this.id=id;
+        this.name=name;
+        this.email=email;
+        this.password=password
+    }
     public String setName(String name){
         this.name=name;
     }
