@@ -1,4 +1,5 @@
 package com.example.demo.entity;
+import java.util.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
@@ -48,6 +49,6 @@ public class StudentEntity
         return id;
     }
     public Date getcreate(){
-        return create;
+        return created;
     }
 }
