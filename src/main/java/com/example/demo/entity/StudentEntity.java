@@ -1,8 +1,11 @@
 package com.example.demo.entity;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 @Entity
 public class StudentEntity
 {
+    @Id
+    @GeneratedValue
     private Integer id;
     private String name,email,password;
     private Date created;
@@ -12,7 +15,8 @@ public class StudentEntity
         this.id=id;
         this.name=name;
         this.email=email;
-        this.password=password
+        this.password=password;
+        this.created=created;
     }
     public String setName(String name){
         this.name=name;
