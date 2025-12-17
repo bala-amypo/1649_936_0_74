@@ -6,5 +6,7 @@ public class StudentEntity
     private String username,email,password;
     private Integer id;
     private Date create;
-    public String g
+    public String getUsername(){
+        return name;
+    }
 }
