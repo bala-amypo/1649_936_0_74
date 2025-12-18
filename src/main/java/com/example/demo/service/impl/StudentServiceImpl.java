@@ -17,4 +17,8 @@ public class StudentServiceImpl implements StudentService{
           public List<StudentEntity> getData(){
                return student.findAll();
           }
+          @Override
+          public String deleteData(@PathVariable int id){
+               repo
+          }
                                }
