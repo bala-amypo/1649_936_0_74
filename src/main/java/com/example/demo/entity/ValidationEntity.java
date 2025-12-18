@@ -6,7 +6,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.*;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Max;
 @Entity
 public class ValidationEntity{
     @Id
@@ -30,7 +31,7 @@ public class ValidationEntity{
     @NotNull(message="Password is mandatory")
     String password,
     @Max(30)
-    @Positive(messaage="Age must be a Positive number")
+    @Positive(message="Age must be a Positive number")
     Integer age){
         this.id=id;
         this.username=username;
