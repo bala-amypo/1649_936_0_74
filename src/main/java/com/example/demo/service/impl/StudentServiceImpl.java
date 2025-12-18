@@ -25,5 +25,5 @@ public class StudentServiceImpl implements StudentService{
           @Override
           public StudentEntity findData(int id){
                return student.findById(id);
-          }tdjkejdkjekjkjkwlklwjlkrjlkjkjwklkejwrkljkj
+          }
 }
