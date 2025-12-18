@@ -10,9 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class StudentServiceImpl implements StudentService{
      @Autowired StudentRepo student;
           @Override
-                public StudentEntity postData(StudentEntity stu){
-                          return student.save(stu);
-                               }
+          public StudentEntity postData(StudentEntity stu){
+               return student.save(stu);
+          }
           @Override
           public List<StudentEntity> getData(){
                return student.findAll();
@@ -28,6 +28,12 @@ public class StudentServiceImpl implements StudentService{
           }
           @Override
           public StudentEntity updateData(int id,StudentEntity s){
-               if( )
+               if(student.existById(id)){
+                    entity.setId(id);
+                    return student.save(stu);
+               }
+               else{
+                    return null;
+               }
           }
 }
