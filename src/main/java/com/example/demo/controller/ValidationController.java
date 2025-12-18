@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.ValidationEntity;
 import com.example.demo.service.ValidationService;
 @RestController
-public class StudentController{
+public class ValidationController{
     @Autowired ValidationService serve;
     @PostMapping("/data")
     public StudentEntity sendData(@Valid @RequestBody ValidationEntity stu){

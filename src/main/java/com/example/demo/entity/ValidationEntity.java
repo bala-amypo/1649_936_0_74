@@ -28,8 +28,9 @@ public class ValidationEntity{
     String email,
     @Size(min=2,max=6)
     @NotNull(message="Password is mandatory")
-    Private String password,
-    @Max(30)@Positive(messaage="Age must be a Positive number")
+    String password,
+    @Max(30)
+    @Positive(messaage="Age must be a Positive number")
     Integer age){
         this.id=id;
         this.username=username;
