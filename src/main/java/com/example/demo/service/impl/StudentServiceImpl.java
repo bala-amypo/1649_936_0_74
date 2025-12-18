@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Service
 public class StudentServiceImpl implements StudentService{
      @Autowired StudentRepo student;
+     @Autowired StudentEntity st;
           @Override
           public StudentEntity postData(StudentEntity stu){
                return student.save(stu);
@@ -29,7 +30,7 @@ public class StudentServiceImpl implements StudentService{
           @Override
           public StudentEntity updateData(int id,StudentEntity s){
                if(student.existById(id)){
-                    entity.setId(id);
+                    st.setId(id);
                     return student.save(stu);
                }
                else{
