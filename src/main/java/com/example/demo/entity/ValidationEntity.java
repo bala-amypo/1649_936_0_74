@@ -37,12 +37,12 @@ public class ValidationEntity{
     public void setPassword(String password){
         this.password=password;
     }
-    public void setId(Integer id){
+    public void setId(Long id){
         this.id=id;
     }
     
     public String getUsername(){
-        return name;
+        return username;
     }
     public String getEmail(){
         return email;
@@ -53,4 +53,5 @@ public class ValidationEntity{
     public Long getId(){
         return id;
     }
+    public ValidationEntity(){}
 }
