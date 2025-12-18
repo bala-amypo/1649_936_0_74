@@ -1,17 +1,17 @@
 package com.example.demo.service.impl;
 import java.util.*;
-import com.example.demo.service.StudentService;
-import com.example.demo.repository.StudentRepo;
-import com.example.demo.entity.StudentEntity;
+import com.example.demo.service.ValidationService;
+import com.example.demo.repository.ValidationRepo;
+import com.example.demo.entity.ValidationEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
 @Service
-public class StudentServiceImpl implements StudentService{
-     @Autowired Repo student;
+public class ValidationServiceImpl implements ValidationService{
+     @Autowired ValidationRepo dent;
      
           @Override
           public StudentEntity postData(StudentEntity stu){
-               return student.save(stu);
+               return dent.save(stu);
           }
 }
