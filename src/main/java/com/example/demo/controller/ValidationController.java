@@ -18,6 +18,6 @@ public class ValidationController{
     }
     @GetMapping("/getdata/{id}")
     public ValidationEntity findVal(@PathVariable int id){
-        return ser.finddata(id);
+        return serve.finddata(id);
     }
 }
