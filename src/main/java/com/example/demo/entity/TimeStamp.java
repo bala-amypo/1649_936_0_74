@@ -4,7 +4,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.PrePersist;
-
+import jakarta.persistence.PrePersist;
+import java.time.LocalDateTime;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -27,6 +28,8 @@ public class TimeStamp{
         this.updateAt=now1;
     }
     @PreUpdate
-    
+    public void OnUpdate(){
+        this.updateAt=now1;
+    }
 
 }
