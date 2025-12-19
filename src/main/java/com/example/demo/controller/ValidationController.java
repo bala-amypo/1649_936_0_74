@@ -17,7 +17,7 @@ public class ValidationController{
         return serve.post(stu);
     }
     @GetMapping("/getdata/{id}")
-    public ValidationEntity findVal(@PathVariable int id){
+    public ValidationEntity findVal(@PathVariable Long id){
         return serve.finddata(id);
     }
 }
