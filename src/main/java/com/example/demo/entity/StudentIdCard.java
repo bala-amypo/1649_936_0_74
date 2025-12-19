@@ -6,12 +6,15 @@ import jakarta.persistence.GenerationType;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-@Entity
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
+    @Entity
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
 public class StudentIdCard{
-    @Oneto
+    @OneToOne
+    @JoinColumn()
     private StudentDetails detail;
     private String idCardNum;
 }
