@@ -13,6 +13,8 @@ import jakarta.persistence.JoinColumn;
     @NoArgsConstructor
     @AllArgsConstructor
 public class StudentIdCard{
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     @OneToOne
     @JoinColumn(name="student_id")
     private StudentDetails detail;
