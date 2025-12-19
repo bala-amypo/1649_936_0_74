@@ -4,7 +4,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.PrePersist;
-import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
 import java.time.LocalDateTime;
 import lombok.Data;
 import lombok.AllArgsConstructor;
@@ -23,13 +23,13 @@ public class TimeStamp{
     private LocalDateTime updateAt;
     @PrePersist
     public void OnCreate(){
-        LocalDateTime now1= LocalDateTime().now();
-        this.createAt=now1;
-        this.updateAt=now1;
+        LocalDateTime now= LocalDateTime().now();
+        this.createAt=now;
+        this.updateAt=now;
     }
     @PreUpdate
     public void OnUpdate(){
-        this.updateAt=now1;
+        this.updateAt=now;
     }
 
 }
