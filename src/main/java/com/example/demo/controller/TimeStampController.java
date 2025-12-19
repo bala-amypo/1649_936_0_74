@@ -11,7 +11,7 @@ import com.example.demo.entity.TimeStamp;
 import com.example.demo.service.TimeStampService;
 import jakarta.validation.Valid;
 @RestController
-public class ValidationController{
+public class TimeStampController{
     @Autowired TimeStampService a;
     @PostMapping("/data1")
     public TimeStamp sendData(@Valid @RequestBody TimeStamp t){
