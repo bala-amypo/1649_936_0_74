@@ -1,8 +1,10 @@
 package  com.example.demo.entity;
 import java.time.LocalDateTime;
+import jakarta.persistence.Entity;
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+@Entity
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
