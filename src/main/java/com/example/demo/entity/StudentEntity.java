@@ -6,7 +6,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 @Entity
 @Data
-@All
+@AllArgsConstructor
+@NoArgsConstructor
 public class StudentEntity
 {
     @Id
