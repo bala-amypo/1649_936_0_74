@@ -8,7 +8,13 @@ import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Max;
+import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 @Entity
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
 public class ValidationEntity{
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -23,9 +29,6 @@ public class ValidationEntity{
     private String password;
     @Max(30)@Positive(message="Age must be a Positive number")
     private int age;
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
 
     // public ValidationEntity(Long id,@NotNull@Size(min=2,max=10,message="must be 2 to 10 characters")String username,@Email
     // String email,
