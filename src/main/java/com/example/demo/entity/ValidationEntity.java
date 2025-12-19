@@ -24,7 +24,8 @@ public class ValidationEntity{
     @Max(30)@Positive(message="Age must be a Positive number")
     private int age;
     @Data
-    @
+    @AllArgsConstructor
+    @NoArgsConstructor
 
     // public ValidationEntity(Long id,@NotNull@Size(min=2,max=10,message="must be 2 to 10 characters")String username,@Email
     // String email,
