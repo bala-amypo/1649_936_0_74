@@ -3,7 +3,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 @RestControllerAdvice
 public class GobalException{
-@ExceptionHandler(ValidationException.class)
-public 
+    @ExceptionHandler(ValidationException.class)
+    public ResponseBody<String> handleValidationException(ValidationException ex){
+        return new REsponse
+    }
 
 }
