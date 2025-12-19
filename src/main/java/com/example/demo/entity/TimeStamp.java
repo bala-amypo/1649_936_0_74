@@ -18,4 +18,10 @@ public class TimeStamp{
     private String email;
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
+    @PrePersist
+    public void OnCreate(){
+        LocalDateTime now1= LocalDateTime().now();
+        this.createAt=now1;
+        this.updateAt=now1;
+    }
 }
