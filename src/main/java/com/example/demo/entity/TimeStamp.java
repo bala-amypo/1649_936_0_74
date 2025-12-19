@@ -6,5 +6,7 @@ public class TimeStamp{
     private String email;
     private LocalDateTime createAt;
     private LocalDateTime updateAt;
-
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
 }
