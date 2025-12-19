@@ -3,7 +3,7 @@ import java.util.*;
 import com.example.demo.service.ValidationService;
 import com.example.demo.repository.ValidationRepo;
 import com.example.demo.entity.ValidationEntity;
-import com.example.demo.entity.ValidationEntity;
+import com.example.demo.exception.ValidationException;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
